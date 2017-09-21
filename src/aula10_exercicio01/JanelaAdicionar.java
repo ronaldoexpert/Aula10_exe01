@@ -43,9 +43,8 @@ class JanelaAdicionar extends JFrame {
     public JanelaAdicionar(List<Coordenadas> dados) throws HeadlessException {
         super("JanelaAdicionar");
         this.coords = dados;
-        
-        DefaultListModel model = new DefaultListModel();
-        lstCoords.setModel(model);
+
+        lstCoords.setModel(new CoordsListModel(coords));
         
         pnlLista.add(new JScrollPane(lstCoords), BorderLayout.CENTER);
         pnlButton.add(novoElemento, BorderLayout.WEST);
@@ -73,6 +72,11 @@ class JanelaAdicionar extends JFrame {
         lstCoords.addListSelectionListener(new ListSelectionListener(){
             @Override
             public void valueChanged(ListSelectionEvent e) {
+                Coordenadas selecionada = lstCoords.getSelectedValue();
+                txtLat.setText(selecionada.getLat() + "");
+                txtLong.setText(selecionada.getLong()+ "");
+                txtDtHora.setText(selecionada.getData_hora()+ "");
+                txtDesc.setText(selecionada.getDesc()+ "");
                 
             }
         });

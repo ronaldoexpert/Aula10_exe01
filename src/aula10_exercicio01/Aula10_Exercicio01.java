@@ -12,6 +12,10 @@ public class Aula10_Exercicio01 {
         
         List<Coordenadas> coords = new ArrayList<>();
         
+        coords.add(a1);
+        coords.add(a2);
+        coords.add(a3);
+        
         return coords;
     }
     

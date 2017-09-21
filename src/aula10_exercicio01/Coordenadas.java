@@ -51,7 +51,7 @@ public class Coordenadas {
 
     @Override
     public String toString() {
-        return Lat + " - " + Long + " - " + data_hora + " - " + Desc;
+        return Lat + " - " + Long;
     }
     
     
