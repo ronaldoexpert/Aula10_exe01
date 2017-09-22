@@ -5,9 +5,9 @@ public class Coordenadas {
     private int Lat;
     private int Long;
     private String data_hora;
-    private int Desc;
+    private String Desc;
 
-    public Coordenadas(int Lat, int Long, String data_hora, int Desc) {
+    public Coordenadas(int Lat, int Long, String data_hora, String Desc) {
         this.Lat = Lat;
         this.Long = Long;
         this.data_hora = data_hora;
@@ -41,11 +41,11 @@ public class Coordenadas {
         this.data_hora = data_hora;
     }
 
-    public int getDesc() {
+    public String getDesc() {
         return Desc;
     }
 
-    public void setDesc(int Desc) {
+    public void setDesc(String Desc) {
         this.Desc = Desc;
     }
 

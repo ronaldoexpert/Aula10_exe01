@@ -6,16 +6,16 @@ import javax.swing.JFrame;
 
 public class Aula10_Exercicio01 {
     private static List<Coordenadas> getDados() {
-        Coordenadas a1 = new Coordenadas(123, 4560, "19/09/2017 21:50", 1);
-        Coordenadas a2 = new Coordenadas(658, 5874, "19/09/2017 21:50", 2);
-        Coordenadas a3 = new Coordenadas(874, 6987, "19/09/2017 21:50", 3);
-        
+        /*Coordenadas a1 = new Coordenadas(123, 4560, '19/09/2017' , "Descricao 01");
+        Coordenadas a2 = new Coordenadas(658, 5874, "19/09/2017 21:50", "Descricao 02");
+        Coordenadas a3 = new Coordenadas(874, 6987, "19/09/2017 21:50", "Descricao 03");
+        */
         List<Coordenadas> coords = new ArrayList<>();
         
-        coords.add(a1);
+        /*coords.add(a1);
         coords.add(a2);
         coords.add(a3);
-        
+        */
         return coords;
     }
     
